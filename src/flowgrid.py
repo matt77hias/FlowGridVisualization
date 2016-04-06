@@ -10,6 +10,12 @@ class FlowGridVoxel(object):
     
     def set_access_counts(self, access_counts=np.zeros((7))):
         self.access_counts = access_counts
+        
+    def __getitem__(self, index):
+        return self.access_counts[index] 
+
+    def get_total_access_counts(self):
+        return np.sum(self.access_counts)
    
 ###################################################################################################################################################################################
 ## FlowGrid
