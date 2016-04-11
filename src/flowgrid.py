@@ -8,7 +8,7 @@ class FlowGridVoxel(object):
     def __init__(self):
         self.set_access_counts()
     
-    def set_access_counts(self, access_counts=np.zeros((7))):
+    def set_access_counts(self, access_counts=np.zeros((7), dtype=np.uint64)):
         self.access_counts = access_counts
         
     def __getitem__(self, index):
