@@ -66,12 +66,13 @@ def plot_flowgrid(flowgrid):
             for y in range(max_y):
                 data[x,y] = float(flowgrid[x,y,z].get_total_access_counts()) / mx   
         
-        colors = plt.cm.Greys(data)
-        resized = cv2.resize(colors, (10*max_x, 10*max_y))           
+        colors = plt.cm.spectral(data)
+        resized = cv2.resize(colors, (10*max_x, 10*max_y))
+        #false_colors = cv2.applyColorMap(resized, cv2.COLORMAP_JET)                     
         cv2.imshow(str(z), resized)
         cv2.waitKey(0)
   
 # Usage:
 #
-#	from loader import load    
-#	plot_flowgrid(load('FlowGrid.txt'))
+from loader import load    
+plot_flowgrid(load('FlowGrid.txt'))
