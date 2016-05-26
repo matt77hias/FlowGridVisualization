@@ -1,6 +1,10 @@
 # FlowGridVisualization
 Visualization utilities for FlowGrids
 
+Use
+--------
+<p align="center"><img src="https://github.com/matt77hias/FlowGridVisualization/blob/master/res/Example.png" ></p>
+
 ~~~~{.python}
 # Import a FlowGrid from a .txt file
 from loader import load
