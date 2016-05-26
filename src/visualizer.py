@@ -71,8 +71,3 @@ def plot_flowgrid(flowgrid):
         #false_colors = cv2.applyColorMap(resized, cv2.COLORMAP_JET)                     
         cv2.imshow(str(z), resized)
         cv2.waitKey(0)
-  
-# Usage:
-#
-from loader import load    
-plot_flowgrid(load('FlowGrid.txt'))
