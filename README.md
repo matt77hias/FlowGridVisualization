@@ -1,8 +1,9 @@
 # FlowGridVisualization
-Visualization utilities for FlowGrids
 
-Use
---------
+## About
+A visualization tool for FlowGrids.
+
+## Use
 <p align="center"><img src="https://github.com/matt77hias/FlowGridVisualization/blob/master/res/Example.png" ></p>
 
 ~~~~{.python}
