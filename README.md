@@ -4,9 +4,9 @@
 A visualization tool for FlowGrids.
 
 ## Use
-<p align="center"><img src="https://github.com/matt77hias/FlowGridVisualization/blob/master/res/Example.png" ></p>
+<p align="center"><img src="res/Example.png" ></p>
 
-~~~~python
+~~~python
 # Import a FlowGrid from a .txt file
 from loader import load
 flowgrid = load('FlowGrid.txt')
@@ -16,4 +16,4 @@ from visualizer import plot_flowgrid, plot_flowgrid_stack, plot_flowgrid_dots
 plot_flowgrid(flowgrid)
 plot_flowgrid_stack(flowgrid)
 plot_flowgrid_dots(flowgrid)  #could not scale
-~~~~
+~~~
